@@ -12,6 +12,7 @@
 9. [Subscription System](#subscription-system)
 10. [Customization](#customization)
 11. [Troubleshooting](#troubleshooting)
+12. [Suggestion](#suggestion)
 
 ## Introduction
 
@@ -106,6 +107,7 @@ Use `/set_trivia_timeout` to set the duration for which each trivia question rem
 - `/about`: Show information about the bot
 - `/ping`: Check if the bot is running
 - `/uptime`: Check how long the bot has been running
+- `/suggestion [sugggestion]` - Send your feedback or suggestion to bot owner
 
 ## Trivia System
 
@@ -136,6 +138,11 @@ Admins can customize various aspects of the bot:
 - Leaderboard reset interval
 - Announcement channel for trivia questions
 - Trivia question timeout duration
+
+
+## Suggestion
+
+- Users can use the `/suggestion [sugggestion]` to send suggestions or feedback to the Bot owner
 
 ## Troubleshooting
 
