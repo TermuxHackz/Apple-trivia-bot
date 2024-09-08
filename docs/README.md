@@ -12,6 +12,7 @@
 9. [Subscription System](#subscription-system)
 10. [Customization](#customization)
 11. [Troubleshooting](#troubleshooting)
+12. [Advanced Features](#advanced-features)
 
 ## Introduction
 
@@ -136,6 +137,34 @@ Admins can customize various aspects of the bot:
 - Leaderboard reset interval
 - Announcement channel for trivia questions
 - Trivia question timeout duration
+
+## Advanced Features
+
+### Natural Language Processing (NLP)
+
+The Apple Trivia Bot utilizes advanced NLP techniques to enhance its functionality:
+
+- **SpaCy Integration**: The bot uses the SpaCy library for sophisticated text processing. This allows for more accurate interpretation of user inputs and generation of high-quality trivia questions.
+
+- **Sentence Transformers**: Employs the 'all-MiniLM-L6-v2' model for generating sentence embeddings, enabling advanced semantic analysis of trivia questions and user responses.
+
+### Similarity Checks
+
+To ensure the uniqueness and quality of trivia questions, the bot implements several similarity checking mechanisms:
+
+- **Question Deduplication**: Before adding a new question to the database, the bot performs similarity checks against existing questions to prevent duplicates or very similar questions from being added.
+
+- **Semantic Similarity**: Uses sentence embeddings to compute semantic similarity between questions, allowing for detection of questions that are phrased differently but have the same meaning.
+
+- **Customizable Threshold**: Administrators can adjust the similarity threshold to fine-tune the balance between question uniqueness and variety.
+
+### Adaptive Difficulty
+
+The bot includes an adaptive difficulty system that adjusts the complexity of questions based on user performance:
+
+- **User Performance Tracking**: Monitors individual user scores and overall server performance.
+
+- **Dynamic Question Selection**: Selects questions from different difficulty tiers based on the current performance metrics.
 
 ## Troubleshooting
 
