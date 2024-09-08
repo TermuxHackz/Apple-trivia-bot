@@ -15,6 +15,7 @@
 12. [Advanced Features](#advanced-features)
 13. [Server Authorization](#server-authorization)
 14. [Achievements System](#achievements-system)
+15. [Hint System](#hint-system)
 
 ## Introduction
 
@@ -99,9 +100,9 @@ Use `/set_trivia_timeout` to set the duration for which each trivia question rem
 - `/set_interval [days] [minutes]`: Set the interval between trivia questions
 - `/set_leaderboard_interval [days] [hours] [minutes]`: Set the interval for automatic leaderboard to be sent (default 4 weeks)
 - `/reset_leaderboard`: Reset the leaderboard
-- `/fetch_leaderboard`: Fetch the current leaderboard
 - `/create_subscriber_role`: Create a role for trivia subscribers
 - `/set_trivia_timeout [seconds]`: Set the timeout for trivia questions (20 seconds to 5 minutes)
+- `/check_authorization`: Check if your Server is authorised to use the Bot.
 
 ### User Commands
 - `/toggle_trivia_sub`: Subscribe or unsubscribe from trivia notifications
@@ -111,6 +112,7 @@ Use `/set_trivia_timeout` to set the duration for which each trivia question rem
 - `/uptime`: Check how long the bot has been running
 - `/profile [user]`: View your own or another user's trivia profile
 - `/achievements [user]`: View your own or another user's achievements
+- `/fetch_leaderboard`: Fetch the current leaderboard
 
 ## Profile System
 
@@ -134,6 +136,8 @@ The profile includes the following information:
 - Accuracy: The percentage of correct answers out of total questions answered.
 - Current Streak: The number of consecutive days the user has answered at least one question correctly.
 - Best Streak: The user's longest streak of consecutive days with correct answers.
+- Hints Used: The number of hints the user has used in the current leaderboard period.
+- Hints Remaining: The number of hints the user can still use before the next reset.
 
 ### Checking Other Users' Streaks
 
@@ -149,6 +153,28 @@ This feature allows for friendly competition and encourages regular participatio
 - Users have a customizable amount of time to answer using interactive buttons (default 30 seconds, can be set between 20 seconds and 5 minutes)
 - Correct answers award 4 points to the user's score
 - Questions are automatically posted at the set interval in the designated channel
+- Users can request hints, but this reduces the points awarded for a correct answer
+
+## Hint System
+
+The Apple Trivia Bot now includes a hint system to help users with challenging questions:
+
+### Hint Usage
+
+- Users can request a hint for each trivia question by clicking the "Hint" button.
+- Hints provide partial information about the correct answer, such as revealing some letters or words.
+- Each user has a limited number of hints they can use per leaderboard reset interval (default is 2).
+- The hint limit resets along with the leaderboard at the interval set by `/set_leaderboard_interval`.
+
+### Hint Costs
+
+- Using a hint reduces the points awarded for a correct answer from 4 to 2.
+- Incorrect answers after using a hint still result in 0 points.
+
+### Hint Reset
+
+- Hint usage is reset for all users in a server when the leaderboard resets.
+- This ensures that all users have an equal opportunity to use hints in each leaderboard period.
 
 ## Leaderboard System
 
