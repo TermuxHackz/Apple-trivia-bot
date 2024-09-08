@@ -108,10 +108,41 @@ Use `/set_trivia_timeout` to set the duration for which each trivia question rem
 - `/about`: Show information about the bot
 - `/ping`: Check if the bot is running
 - `/uptime`: Check how long the bot has been running
+- `/profile [user]`: View your own or another user's trivia profile
+
+## Profile System
+
+The Apple Trivia Bot now includes a profile system that allows users to view their trivia statistics and those of other users.
+
+### Viewing Profiles
+
+- Command: `/profile [user]`
+- Description: Displays the trivia profile for yourself or another user.
+- Usage: 
+  - `/profile` (to view your own profile)
+  - `/profile @username` (to view another user's profile)
+
+### Profile Information
+
+The profile includes the following information:
+
+- Total Score: The user's cumulative score from all trivia questions.
+- Correct Answers: The total number of questions the user has answered correctly.
+- Questions Answered: The total number of questions the user has attempted.
+- Accuracy: The percentage of correct answers out of total questions answered.
+- Current Streak: The number of consecutive days the user has answered at least one question correctly.
+- Best Streak: The user's longest streak of consecutive days with correct answers.
+
+### Checking Other Users' Streaks
+
+You can easily check another user's streak and other stats by mentioning them in the profile command:
+
+1. Use the command `/profile @username`
+2. The bot will display the profile for the mentioned user, including their current streak and best streak.
+
+This feature allows for friendly competition and encourages regular participation in the trivia games.
 
 ## Trivia System
-
-- Questions are generated using the Perplexity API
 - Each question is multiple-choice with four options
 - Users have a customizable amount of time to answer using interactive buttons (default 30 seconds, can be set between 20 seconds and 5 minutes)
 - Correct answers award 4 points to the user's score
@@ -174,13 +205,14 @@ The Apple Trivia Bot is a private bot designed for exclusive use in specific Dis
 1. [The Apple Den Server](https://discord.gg/appleden)
 2. [The Test Server](https://discord.gg/pf66AXK8cW)
 
+<h6>Read privacy policy here: https://bit.ly/3AXpgCj</h6>
+
 ### Important Notes:
 - The bot will automatically leave any server it is added to that is not on the authorized list.
 - Attempts to use the bot's commands in unauthorized servers will result in an error message.
-- The bot's "Add to Server" button on its profile cannot be removed, but the bot will not function in unauthorized servers even if added.
 
 ### For Server Owners:
-If you believe your server would benefit from the Apple Trivia Bot and would like to request authorization, please contact the bot developer directly. Please note that authorizations are granted on a case-by-case basis, and the bot is intended to remain exclusive to a limited number of servers.
+If you believe your server would benefit from the Apple Trivia Bot and would like to request authorization, please contact the bot developer directly (discord: techcodes27). Please note that authorizations are granted on a case-by-case basis, and the bot is intended to remain exclusive to a limited number of servers.
 
 ## Privacy and Data Handling
 
