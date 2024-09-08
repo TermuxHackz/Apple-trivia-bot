@@ -205,7 +205,7 @@ The Apple Trivia Bot is a private bot designed for exclusive use in specific Dis
 1. [The Apple Den Server](https://discord.gg/appleden)
 2. [The Test Server](https://discord.gg/pf66AXK8cW)
 
-<h6>Read privacy policy here: https://bit.ly/3AXpgCj</h6>
+Read privacy policy [here](https://bit.ly/3AXpgCj)
 
 ### Important Notes:
 - The bot will automatically leave any server it is added to that is not on the authorized list.
