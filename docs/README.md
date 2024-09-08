@@ -13,6 +13,7 @@
 10. [Customization](#customization)
 11. [Troubleshooting](#troubleshooting)
 12. [Advanced Features](#advanced-features)
+13. [Server Authorization](#server-authorization)
 
 ## Introduction
 
@@ -165,6 +166,28 @@ The bot includes an adaptive difficulty system that adjusts the complexity of qu
 - **User Performance Tracking**: Monitors individual user scores and overall server performance.
 
 - **Dynamic Question Selection**: Selects questions from different difficulty tiers based on the current performance metrics.
+
+## Server Authorization
+
+The Apple Trivia Bot is a private bot designed for exclusive use in specific Discord servers. Currently, only the following servers are authorized to use this bot:
+
+1. [The Apple Den Server](https://discord.gg/appleden)
+2. [The Test Server](https://discord.gg/pf66AXK8cW)
+
+### Important Notes:
+- The bot will automatically leave any server it is added to that is not on the authorized list.
+- Attempts to use the bot's commands in unauthorized servers will result in an error message.
+- The bot's "Add to Server" button on its profile cannot be removed, but the bot will not function in unauthorized servers even if added.
+
+### For Server Owners:
+If you believe your server would benefit from the Apple Trivia Bot and would like to request authorization, please contact the bot developer directly. Please note that authorizations are granted on a case-by-case basis, and the bot is intended to remain exclusive to a limited number of servers.
+
+## Privacy and Data Handling
+
+As a private bot, the Apple Trivia Bot adheres to strict privacy guidelines:
+- User data is only collected and stored for the authorized servers.
+- Leaderboard information and user scores are server-specific and not shared between authorized servers.
+- The bot does not collect or store any personal information beyond what is necessary for its trivia and leaderboard functionalities.
 
 ## Troubleshooting
 
