@@ -14,6 +14,7 @@
 11. [Troubleshooting](#troubleshooting)
 12. [Advanced Features](#advanced-features)
 13. [Server Authorization](#server-authorization)
+14. [Achievements System](#achievements-system)
 
 ## Introduction
 
@@ -109,6 +110,7 @@ Use `/set_trivia_timeout` to set the duration for which each trivia question rem
 - `/ping`: Check if the bot is running
 - `/uptime`: Check how long the bot has been running
 - `/profile [user]`: View your own or another user's trivia profile
+- `/achievements [user]`: View your own or another user's achievements
 
 ## Profile System
 
@@ -169,6 +171,37 @@ Admins can customize various aspects of the bot:
 - Leaderboard reset interval
 - Announcement channel for trivia questions
 - Trivia question timeout duration
+
+## Achievements System
+
+The Apple Trivia Bot now includes an achievements system to reward users for their participation and performance in trivia games.
+
+### Available Achievements
+
+- **Apple Seed**: Answer your first question correctly
+- **Apple Sapling**: Answer 10 questions correctly
+- **Apple Tree**: Answer 50 questions correctly
+- **iMaster**: Answer 100 questions correctly
+- **Hat Trick**: Achieve a 3-day streak
+- **Weekly Wonder**: Achieve a 7-day streak
+- **Monthly Master**: Achieve a 30-day streak
+
+### Viewing Achievements
+
+- Command: `/achievements [user]`
+- Description: Displays the achievements for yourself or another user.
+- Usage: 
+  - `/achievements` (to view your own achievements)
+  - `/achievements @username` (to view another user's achievements)
+
+The achievements view shows both unlocked (✅) and locked (🔒) achievements, allowing users to see their progress and what they can strive for next.
+
+### Unlocking Achievements
+
+Achievements are automatically unlocked as you participate in trivia games and meet the required criteria. When you unlock a new achievement, you'll receive a notification after answering a question correctly.
+
+This feature adds an extra layer of engagement to the trivia game, encouraging users to participate regularly and improve their performance to unlock all achievements.
+
 
 ## Advanced Features
 
