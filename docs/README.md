@@ -149,11 +149,28 @@ You can easily check another user's streak and other stats by mentioning them in
 This feature allows for friendly competition and encourages regular participation in the trivia games.
 
 ## Trivia System
+- Questions can be either text-based or image-based
 - Each question is multiple-choice with four options
 - Users have a customizable amount of time to answer using interactive buttons (default 30 seconds, can be set between 20 seconds and 5 minutes)
 - Correct answers award 4 points to the user's score
 - Questions are automatically posted at the set interval in the designated channel
 - Users can request hints, but this reduces the points awarded for a correct answer
+
+### Image-Based Questions
+- In addition to text-based questions, the bot now supports image-based trivia
+- Image questions typically ask users to identify an Apple product shown in the image
+- Images are generated using AI technology, ensuring a wide variety of unique visual questions
+- The image is displayed within the trivia question embed for easy viewing
+- Users answer image questions in the same way as text questions, using the multiple-choice buttons
+- This feature adds a visual element to the trivia game, making it more engaging and diverse
+
+The addition of image-based questions enhances the trivia experience by:
+- Providing visual variety to the question format
+- Testing users' ability to recognize Apple products visually
+- Increasing engagement through interactive visual content
+- Offering a more diverse and challenging trivia experience
+
+Both text-based and image-based questions contribute equally to users' scores and achievements, maintaining a fair and balanced gameplay experience.
 
 ## Hint System
 
