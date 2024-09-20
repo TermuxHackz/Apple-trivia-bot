@@ -152,12 +152,21 @@ This feature allows for friendly competition and encourages regular participatio
 - Questions can be either text-based or image-based
 - Each question is multiple-choice with four options
 - Users have a customizable amount of time to answer using interactive buttons (default 30 seconds, can be set between 20 seconds and 5 minutes)
-- Correct answers award 4 points to the user's score
+- Correct answers award points based on the question type and whether a hint was used
 - Questions are automatically posted at the set interval in the designated channel
 - Users can request hints, but this reduces the points awarded for a correct answer
 
+### Point System
+- Text-based questions:
+  - 4 points for a correct answer without using a hint
+  - 2 points for a correct answer after using a hint
+- Image-based questions:
+  - 3 points for a correct answer without using a hint
+  - 2 points for a correct answer after using a hint
+- Incorrect answers always result in 0 points
+
 ### Image-Based Questions
-- In addition to text-based questions, the bot now supports image-based trivia
+- In addition to text-based questions, the bot supports image-based trivia
 - Image questions typically ask users to identify an Apple product shown in the image
 - Images are generated using AI technology, ensuring a wide variety of unique visual questions
 - The image is displayed within the trivia question embed for easy viewing
@@ -170,11 +179,11 @@ The addition of image-based questions enhances the trivia experience by:
 - Increasing engagement through interactive visual content
 - Offering a more diverse and challenging trivia experience
 
-Both text-based and image-based questions contribute equally to users' scores and achievements, maintaining a fair and balanced gameplay experience.
+Both text-based and image-based questions contribute to users' scores and achievements, with image questions being slightly less valuable to balance their potentially easier nature.
 
 ## Hint System
 
-The Apple Trivia Bot now includes a hint system to help users with challenging questions:
+The Apple Trivia Bot includes a hint system to help users with challenging questions:
 
 ### Hint Usage
 
@@ -185,7 +194,9 @@ The Apple Trivia Bot now includes a hint system to help users with challenging q
 
 ### Hint Costs
 
-- Using a hint reduces the points awarded for a correct answer from 4 to 2.
+- Using a hint reduces the points awarded for a correct answer:
+  - For text-based questions: from 4 to 2 points
+  - For image-based questions: from 3 to 2 points
 - Incorrect answers after using a hint still result in 0 points.
 
 ### Hint Reset
@@ -193,6 +204,7 @@ The Apple Trivia Bot now includes a hint system to help users with challenging q
 - Hint usage is reset for all users in a server when the leaderboard resets.
 - This ensures that all users have an equal opportunity to use hints in each leaderboard period.
 
+These updates reflect the new point system, including the differentiation between text-based and image-based questions, and how hints affect scoring. The hint system explanation has also been adjusted to account for the different point values for each question type.
 ## Leaderboard System
 
 - Tracks user scores across all trivia questions
