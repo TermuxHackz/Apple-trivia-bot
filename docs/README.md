@@ -62,7 +62,9 @@ Configure how often the leaderboard is sent and then resets with `/set_leaderboa
 Use `/set_trivia_timeout` to set the duration for which each trivia question remains active.
 
 ## Bot Configuration
+- The Apple Trivia Bot can be configured using the `/configure` command
 
+  
 ### Trivia Channel
 - Command: `/set_channel #channel`
 - Description: Sets the channel where trivia questions will be posted.
